@@ -11,6 +11,7 @@ export default function Home() {
       <ul className="flex flex-col gap-2 mt-8">
         {movies.map((movie, i) => (
           <li 
+            key={i}
             className="font-bold font-rennie text-[2rem] p-1 pl-4 bg-white text-black capitalize -rotate-6 flex"
           >
             <span className="bg-black text-white px-2 mr-4">{i + 1}</span>
